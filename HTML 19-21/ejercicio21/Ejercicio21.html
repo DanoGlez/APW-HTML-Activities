@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 21</title>
+</head>
+<body>
+
+    <form action="Ejercicio21.php" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<fieldset>
+    <legend> Datos Importantes </legend>
+
+        <!-- Rellenar Nombre-->
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="name" id="name" max="12" required autocomplete="off">
+            <br>
+            <br>
+        <!-- Rellenar Apellido-->
+        <label for="Apellido">Apellido: </label>
+        <input type="text" name="surname" id="surname" max="24" required autocomplete="off">
+            <br>
+            <br>
+        <!-- Rellenar Direccion -->
+        <label for="Direccion">Direccion: </label>
+        <input type="text" name="address" id="address" required autocomplete="off">
+            <br>
+            <br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="hombre" id="hombre" value="Hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="mujer" id="mujer" value="Mujer" required>
+        <label for="mujer">Hombre</label>
+            <br>
+            <br>
+        <!-- Contraseñas y confirmar contraseña-->
+        <label for="Contraseña">Contraseña: </label>
+        <input type="password" name="password" id="password" required autocomplete="off">
+            <br>
+            <br>
+        <label for="Contraseña2">Confirmar Contraseña: </label>
+        <input type="password" name="password2" id="password2" required autocomplete="off">
+            <br>
+            <br>
+        <!--Sexo-->
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="hombre" id="hombre" value="Hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="mujer" id="mujer" value="Mujer" required>
+        <label for="mujer">Hombre</label>
+            <br>
+            <br>
+        <!--Tipo de Plan-->
+        <label for="plan">Tipo de Plan: </label>
+        <input type="checkbox" name="free" id="free" value="Free" checked>
+        <label for="free">Free</label>
+        <input type="checkbox" name="basic" id="basic" value="Basic">
+        <label for="basic">Basic</label>
+        <input type="checkbox" name="pro" id="pro" value="Pro">
+        <label for="pro">Pro</label>
+            <br>
+            <br>
+
+         <!-- Boton de ayuda-->
+         <button onclick="alert('Por favor, rellene todos los datos del formulario y pinche al final en el botón Registrar')">Ayuda</button>
+         <br>
+         <br>   
+</fieldset>
+<br>
+<fieldset>
+        <!--Correo Electronico-->
+        <label for="Correo">Correo Electronico: </label>
+        <input type="email" name="email" id="email" required autocomplete="off">
+            <br>
+            <br>
+        <!--Edad-->
+        <label for="Edad">Edad: </label>
+        <input type="number" name="age" id="age" min="1980" max="2021" required autocomplete="off">
+            <br>
+            <br>
+        <!-- Fecha de Nacimiento-->
+        <label for="Fecha">Fecha de Nacimiento: </label>
+        <input type="date" name="date" id="date" min="1980-01-01" max="2010-01-01" required autocomplete="off">
+            <br>
+            <br>
+
+        <!--Pais-->
+        <label for="pais">País: </label>
+        <select name="pais" id="pais">
+            <option value="España" selected>España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Italia">Italia</option>
+            <option value="Portugal">Portugal</option>
+        </select>
+            <br>
+            <br>
+            <!--➔ Crea un campo de tipo color-->
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color" required autocomplete="off">
+                <br>
+                <br>
+                
+            <hr>
+
+        <!--SUELDO-->
+        <label for="Sueldo">Sueldo: </label>
+        <input type="range" name="sueldo" id="sueldo" min="800" max="1600" step="100" required autocomplete="off">
+            <br>
+            <br>
+
+        <!-- Tipo de disco-->
+        <label for="Disco">Disco: </label>
+        <select name="disco" id="disco">
+            <optgroup label="Disco SSD">
+                <option value="512 MB">512 MB</option>
+                <option value="1 TB">1 TB</option>
+            </optgroup>
+            <optgroup label="Disco HDD">
+                <option value="512 MB">512 MB</option>
+                <option value="1 TB">1 TB</option>
+            </optgroup>
+        </select>
+            <br>
+            <br>
+        <!--Notas, con valor predefinido “No es necesario rellenarlo”.-->
+        <label for="notas">Notas: </label>
+        <br>
+        <textarea name="notas" id="notas" maxlength="50" cols="30" rows="10">No es necesario rellenarlo</textarea>
+            <br>
+            <hr>
+        <!--➔ Crea un campo de tipo month y otro week-->
+        <label for="month">Mes: </label>
+        <input type="month" name="month" id="month" required autocomplete="off">
+            <br>
+            <br>
+        <label for="week">Semana: </label>
+        <input type="week" name="week" id="week" required autocomplete="off">
+            <br>
+            <br>
+        <!--Web favoritas-->
+        <label for="url">Pagina Web: </label>
+        <input type="url" name="url" id="url" required autocomplete="off">
+            <br>
+            <br>
+        <!--Navegadores-->
+        <label for="navegador">Navegador: </label>
+        <input list="browsers">
+        <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br>
+            <hr>
+            0
+        <input type= "range" id="a" name="a" value="50">
+            100 +
+        <input type= "number" id="b" name="b" value="50">
+            =
+        <output name="x" for="a b"></output>
+            <br><br>
+<legend> Datos Secundarios</legend>
+</fieldset>   
+<br>
+        <!--Boton de enviar-->
+        <input type="submit" value="Registrar">
+        <input type="reset" value="Borrar">           
+    </form>
+</body>
+</html>

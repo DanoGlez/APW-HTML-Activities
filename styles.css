@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8eadb; /* Cambiado a otro fondo pastel */
+}
+
+.container {
+    text-align: center;
+}
+
+/* Estilos para el índice vertical */
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.index-container a {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.index-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los botones y el índice */
+ul, a {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.indices {
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid black;
+}
+
+.cambiar{
+    background-color: #FFD1DC;
+    color: black;
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}

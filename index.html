@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Índice de Ejercicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>INDICE DE EJERCICIOS</h1>
+
+        <div class="index-container">
+            <a href="#" onclick="mostrarEjercicios('HTML 11-18')">Mostrar Ejercicios 11-18</a>
+            <a href="#" onclick="mostrarEjercicios('HTML 19-21')">Mostrar Ejercicios 19-21</a>
+        </div>
+
+        <ul class="ejercicios" id="HTML 11-18">
+            <li><a href="HTML 11-18/index.html" class="indices">ÍNDICE 11-18</a></li>
+            <li><a href="HTML 11-18/ejercicio11/ejercicio11.html" class="cambiar">Ejercicio 11</a></li>
+            <li><a href="HTML 11-18/ejercicio12/ejercicio12.html" class="cambiar">Ejercicio 12</a></li>
+            <li><a href="HTML 11-18/ejercicio13/ejercicio13.html" class="cambiar">Ejercicio 13</a></li>
+            <li><a href="HTML 11-18/ejercicio14/ejercicio14.html" class="cambiar">Ejercicio 14</a></li>
+            <li><a href="HTML 11-18/ejercicio15/ejercicio15.html" class="cambiar">Ejercicio 15</a></li>
+            <li><a href="HTML 11-18/ejercicio16/ejercicio16.html" class="cambiar">Ejercicio 16</a></li>
+            <li><a href="HTML 11-18/ejercicio17/ejercicio17.html" class="cambiar">Ejercicio 17</a></li>
+            <li><a href="HTML 11-18/ejercicio18/ejercicio18.html" class="cambiar">Ejercicio 18</a></li>
+        </ul>
+
+        <ul class="ejercicios hidden" id="HTML 19-21">
+            <li><a href="HTML 19-21/index.html" class="indices">ÍNDICE 19-21</a></li>
+            <li><a href="HTML 19-21/ejercicio19/Ejercicio19.html" class="cambiar">Ejercicio 19</a></li>
+            <li><a href="HTML 19-21/ejercicio20/Ejercicio20.html" class="cambiar">Ejercicio 20</a></li>
+            <li><a href="HTML 19-21/ejercicio21/Ejercicio21.html" class="cambiar">Ejercicio 21</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function mostrarEjercicios(id) {
+            // Oculta todas las listas de ejercicios
+            var todasLasListas = document.querySelectorAll('.ejercicios');
+            todasLasListas.forEach(function(lista) {
+                lista.classList.add('hidden');
+            });
+
+            // Muestra la lista de ejercicios correspondiente al botón clicado
+            var listaMostrar = document.getElementById(id);
+            listaMostrar.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

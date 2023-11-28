@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 20</title>
+</head>
+<body>
+    <form action="Ejercicio20.php" method="post">
+    <fieldset>
+        <legend> Datos Personales </legend>
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <br>
+        <label for="nacimiento">Edad: </label>
+        <input type="number" name="nacimiento" id="nacimiento" required>
+    </fieldset>
+    <br>
+        <legend> Cultura General</legend>
+        <label for="noruega">Capital de Noruega: </label>
+        <input type="radio" name="noruega" value="option1" required>
+        <label for="option1">Copenhage</label>
+        <input type="radio" name="noruega" value="option2" required>
+        <label for="option2">Helsinki</label>
+        <input type="radio" name="noruega" value="option3" required>
+        <label for="option3">Oslo</label>
+        <br>
+        <label for="francesa"> Fecha de la Revolución Francesa:</label>
+        <input type="radio" name="francesa" value="option4" required>
+        <label for="option4">1492</label>
+        <input type="radio" name="francesa" value="option5" required>
+        <label for="option5">1789</label>
+        <input type="radio" name="francesa" value="option6" required>
+        <label for="option6">1970</label>
+    </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

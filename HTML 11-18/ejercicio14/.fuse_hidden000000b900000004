@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Ejercicio 14: HTML Etiqueta &lt;a&gt;</title>
+    <style>
+        p {
+            font-family: Arial;
+        }
+        a {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: orange;
+            background-color: black;
+        }
+        a:hover {
+            color: pink;
+            background-color: red;
+        }
+        a:active {
+            color: green;
+            background-color: blueviolet;
+        }
+        img{
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="29"><mark>HTML Links and Bookmarks</mark></h1>
+    <p>
+        Los enlaces se encuentran en casi todas las páginas web, lo que permite a los usuarios hacer clic para ir de una página a otra.
+    </p>
+    <h2>- TARGET -</h2>
+    <p>
+            <a href="https://www.google.es"target="_blank"><b>_blank</b></a>: abre el documento vinculado en una nueva ventana o pestaña
+    </p>
+    <p>
+        <a href="https://www.bing.es" target="_self"><b>_self</b></a>: abre el documento cinvulado en la misma pestaña o marco
+    </p>
+    <p>
+        <a href="https://duckduckgo.com/" target="_parent"><b>_parent</b></a>: abre el documento vinculado en el marco padre
+    </p> 
+            <a href="https://www.ecosia.org/?c=es" target="_top"><b>_top</b></a>: abre el documento vinculado en toda la ventana (cuando se utilizan frames)
+    </p>
+    
+    <h2>MIS WEBs FAVORITAS</h2>
+
+        <!-- Discord -->
+        <a href="https://discord.com/" target="_blank">
+            <img src="imagenes/Discord-Logo.png">
+        </a>
+        <a href="https://discord.com/" target="_blank"> Discord.com </a> <br>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank"> 
+            <img src="imagenes/OIP.jpg">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"> Instagram.com</a> <br>
+
+        <!-- Whatsapp -->
+        <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="imagenes/clipart-whatsapp-logo-5.png">
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank"> Web.whatsapp.com</a> <br>
+
+        <!-- Discord Developer -->
+        <a href="https://discord.com/developers" target="_blank">
+            <img src="imagenes/Discord-Logo.png">
+        </a>
+        <a href="https://discord.com/developers" target="_blank"> Discord.com/developers</a> <br>
+
+        <!-- Discord JS -->
+        <a href="https://discord.js.org/" target="_blank">
+            <img id src="imagenes/26492485.png">
+        </a>
+        <a href="https://discord.js.org/" target="_blank"> Discord.js.org</a> <br>
+
+
+            <a href="https://www.google.com" target="_blank">
+                <img src="imagenes/google.png" alt="Ir a Google"> 
+            </a>
+            <!-- Sale Ir a Google -->
+            <p>
+                HTML5 establece una serie de nuevos elementos y tributos que reflejan el uso típico de los sitios web modernos. Algunos de ellos        son técnicamente similares a las etiquetas &lt;div&gt; y &lt;span&gt;, pero tienen un significado semántico, como por ejemplo &lt;nav&gt; (bloque de navegación del sitio web) y &lt;footer>&gt;.
+    </p>
+    <h3><a href="#29">Volver al principio de la página</a></h3>
+        <img src="https://c.pxhere.com/images/6e/9d/870e1dd0862927f53a408380f132-1593914.jpg!d" alt="No hay internet" width="400"><br>
+    <img src="OIP.jpg" usemap="#image_map">
+        <map name="image_map">
+            <area alt="Cuadros" title="Cuadros" href="https://www.bing.com/search?q=Cuadros+ropa&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=cuadros+rop&sc=10-11&sk=&cvid=025C8AE31437443DA8A57CEF3D5E3F7C&ghsh=0&ghacc=0&ghpl=" target="_blank"coords="325,4,435,300" shape="rect">
+            <area alt="Amarillo" title="Amarillo" href="https://es.wikipedia.org/wiki/Amarillo" target="_blank" coords="234,2,318,296" shape="rect">
+            <area alt="Verde" title="Verde" href="https://psicologiaymente.com/psicologia/que-significa-el-color-verde" target="_blank" coords="157,3,234,290" shape="rect">
+            <area alt="Celeste" title="Celeste" href="https://es.wikipedia.org/wiki/Celeste_(color)"target="_blank" coords="49,10,148,290" shape="rect">
+        </map>
+
+
+    </body>
+</html>

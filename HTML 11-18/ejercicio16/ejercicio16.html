@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="Ejercicio 15: Listas en HTML">
+    <meta name="keywords" content="listas, html, ejercicios">
+    <title>Ejercicio 16</title>
+    <style>
+        body {
+            background-color: #b0e57c;
+        }
+
+        ul#menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul#menu li {
+            display: inline;
+            margin-right: 20px; /* Espacio entre elementos del menú */
+        }
+
+        ul#menu li a {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px 4px 0 0;
+        }
+
+        ul#menu li a:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="1">HTML: Tipos de Listas</h1>
+    <br>
+    <ul id="menu">
+        <li><a href="#2">LISTA NO ORDENADA</a></li>
+        <li><a href="#3">LISTA ORDENADA</a></li>
+        <li><a href="#4">LISTA DE DESCRIPCIÓN</a></li>
+    </ul>
+
+    <h2 id="2">Listas no ordenadas</h2>
+    <p>Una lista no ordenada comienza con la etiqueta &lt;ul&gt;. Cada elemento de la lista comienza con la etiqueta &lt;li&gt;</p>
+    <ul style="list-style-type: square;">
+        <li>Móvil 1</li>
+        <li>Móvil 2</li>
+        <li>Móvil 3</li>
+        <li>Móvil 4</li>
+        <li>Móvil 5</li>
+    </ul>
+
+    <br>
+
+    <h2 id="3">Listas ordenadas</h2>
+    <p>Una lista ordenada comienza con la etiqueta &lt;ol&gt;. Cada elemento de la lista comienza con la etiqueta &lt;li&gt;.</p>
+    <ol style="list-style-type: upper-roman;">
+        <li>HD1</li>
+        <li>HD2</li>
+        <li>HD3</li>
+        <li>HD4</li>
+        <li>HD5</li>
+    </ol>
+
+    <br>
+
+    <h2 id="4">Listas de descripción</h2>
+    <p>Una lista de descripción es una lista de términos, con una descripción de cada término.</p>
+    <dl>
+        <dt>Placa Base</dt>
+        <dd>...Descripción...</dd>
+
+        <dt>Procesador</dt>
+        <dd>...Descripción...</dd>
+
+        <dt>Tarjeta Gráfica</dt>
+        <dd>...Descripción...</dd>
+
+        <dt>Memoria RAM</dt>
+        <dd>...Descripción...</dd>
+
+        <dt>Monitor</dt>
+        <dd>...Descripción...</dd>
+    </dl>
+
+    <hr>
+
+    <p><a href="#1">Volver al inicio</a></p>
+</body>
+</html>
